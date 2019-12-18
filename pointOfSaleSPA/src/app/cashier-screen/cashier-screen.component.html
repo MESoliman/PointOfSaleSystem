@@ -33,8 +33,9 @@
                     <div class="col">{{product.barcode}}</div>
                     <div class="col">{{product.name}}</div>
                     <div class="col">{{product.category.name}}</div>
-                    <div class="col">{{product.quantity}}</div>
                     <div class="col">{{product.price}}</div>
+                    <div class="col">{{product.quantity}}</div>
+                    <div class="col">{{product.cost}}</div>
                     <div class="col"><button class="btn btn-danger" (click)="removeItem(product.barcode)">remove</button></div>
                 </div>
                 <div class="row" >
@@ -46,7 +47,7 @@
                         <label>price : </label>
                     </div>
                     <div class="col">
-                        <label [(ngModel)]="TotalPrice">{{this.TotalPrice}}</label>
+                        <label>{{this.TotalPrice}}</label>
                     </div>    
                 </div>
         </div>

@@ -38,6 +38,7 @@ export class CashierScreenComponent implements OnInit {
         name: product.name,
         price: product.price,
         quantity: this.quantity,
+        cost: product.price * this.quantity,
         category: product.category
       };
 
@@ -49,6 +50,9 @@ export class CashierScreenComponent implements OnInit {
       this.items.push(this.item);
       this.noItems = false;
       this.model.push(this.product);
+      this.TotalPrice = this.items.reduce((currentTotal, item) => {
+        return item.cost + currentTotal ;
+      }, 0);
     }, error => {
       console.log(error);
     });
@@ -57,6 +61,9 @@ export class CashierScreenComponent implements OnInit {
   removeItem(productBarcode) {
     const index = this.model.indexOf(productBarcode);
     this.model.splice(index, 1);
+    this.TotalPrice = this.items.reduce((currentTotal, item) => {
+      return currentTotal - item.cost ;
+    }, this.TotalPrice);
     console.log(this.model.length);
     if (this.model.length === 0) {
       console.log('in here');
