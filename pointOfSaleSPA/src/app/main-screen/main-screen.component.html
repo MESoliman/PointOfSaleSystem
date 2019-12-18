@@ -1,0 +1,17 @@
+<div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            
+                    <a class="navbar-brand">Point Of Sale</a>
+                
+                    <a>{{authService.name}}</a>
+            <button (click)="logout()">Logout</button>
+        </div>
+    </nav>
+  </div>
+
+  
+
+<app-cashier-screen *ngIf="routeEmployee(this.authService.role)==-1"></app-cashier-screen>
+<app-data-entry-screen *ngIf="routeEmployee(this.authService.role)==0"></app-data-entry-screen>
+<app-manager-screen *ngIf="routeEmployee(this.authService.role)==1"></app-manager-screen>

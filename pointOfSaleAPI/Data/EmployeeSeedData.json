@@ -1,0 +1,136 @@
+[
+    {
+       "id": "1",
+       "Password": "password",
+       "SSN": 502240540546,
+       "Name": "Mohamed Essam",
+       "Salary": 10259.65,
+       "Gender": "male",
+       "Age": 30,
+       "Job": "manager",
+       "PhoneNumber": "+20 (503) 501-3595"
+    },
+    {
+      "id": "2",
+      "Password": "password",
+      "SSN": 5022405400546,
+      "Name": "Shelly Cross",
+      "Salary": 3259.65,
+      "Gender": "female",
+      "Age": 30,
+      "Job": "cashier",
+      "PhoneNumber": "+20 (803) 501-3595"
+    },
+    {
+      "id": "3",
+      "Password": "password",
+      "SSN": 502241822960992,
+      "Name": "Gilmore Gallagher",
+      "Salary": 2440.45,
+      "Gender": "male",
+      "Age": 30,
+      "Job": "cashier",
+      "PhoneNumber": "+20 (976) 538-2767"
+    },
+    {
+      "id": "4",
+      "Password": "password",
+      "SSN": 5022482844013009,
+      "Name": "Lamb Hernandez",
+      "Salary": 1448.02,
+      "Gender": "male",
+      "Age": 25,
+      "Job": "cashier",
+      "PhoneNumber": "+20 (876) 498-2230"
+    },
+    {
+      "id": "5",
+      "Password": "password",
+      "SSN": 502246201755902,
+      "Name": "Best Murphy",
+      "Salary": 1687.97,
+      "Gender": "male",
+      "Age": 20,
+      "Job": "cashier",
+      "PhoneNumber": "+20 (891) 528-3885"
+    },
+    {
+      "id": "6",
+      "Password": "password",
+      "SSN": 50224610523874767,
+      "Name": "Marks Holt",
+      "Salary": 1979.31,
+      "Gender": "male",
+      "Age": 38,
+      "Job": "cashier",
+      "PhoneNumber": "+20 (955) 424-3794"
+    },
+    {
+      "id": "7",
+      "Password": "password",
+      "SSN": 502245152928461,
+      "Name": "Carolyn Hooper",
+      "Salary": 1368.57,
+      "Gender": "female",
+      "Age": 25,
+      "Job": "cashier",
+      "PhoneNumber": "+20 (891) 498-2928"
+    },
+
+        {
+          "id": "8",
+          "Password": "password",
+          "SSN": 50452093313478,
+          "Name": "Aileen Hanson",
+          "Salary": 1608.05,
+          "Gender": "female",
+          "Age": 20,
+          "Job": "data entry",
+          "PhoneNumber": "+20 (890) 563-2450"
+        },
+        {
+          "id": "9",
+          "Password": "password",
+          "SSN": 504524763053509,
+          "Name": "Compton Patterson",
+          "Salary": 2203.42,
+          "Gender": "male",
+          "Age": 25,
+          "Job": "data entry",
+          "PhoneNumber": "+20 (806) 404-2245"
+        },
+        {
+          "id": "10",
+          "Password": "password",
+          "SSN": 5045286587059753,
+          "Name": "Marquez Pope",
+          "Salary": 1476.06,
+          "Gender": "male",
+          "Age": 34,
+          "Job": "data entry",
+          "PhoneNumber": "+20 (981) 552-3783"
+        },
+        {
+          "id": "11",
+          "Password": "password",
+          "SSN": 50452671167509,
+          "Name": "Susana Nielsen",
+          "Salary": 3128.26,
+          "Gender": "female",
+          "Age": 31,
+          "Job": "data entry",
+          "PhoneNumber": "+20 (880) 591-3936"
+        },
+        {
+          "id": "12",
+          "Password": "password",
+          "SSN": 5045291661515474,
+          "Name": "Hobbs Ware",
+          "Salary": 1815.52,
+          "Gender": "male",
+          "Age": 23,
+          "Job": "data entry",
+          "PhoneNumber": "+20 (959) 600-3387"
+        }
+      
+  ]

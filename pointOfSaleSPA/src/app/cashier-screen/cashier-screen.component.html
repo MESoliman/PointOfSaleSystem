@@ -1,0 +1,54 @@
+<div>
+    <mat-card>
+        <mat-card-header>
+            <h4>Invoices</h4>
+        </mat-card-header>
+        <mat-card-content>
+            <form #loginForm="ngForm" class="form-inline" (ngSubmit)="createItem(barcode.value)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label> Product Barcode </label>
+                        </div>
+                        <div class="col">
+                            <input #barcode type="number">
+                        </div>
+                        <div class="col">
+                            <label> Quantity </label>
+                        </div>
+                        <div class="col">
+                            <input [(ngModel)]="quantity" type="number" name="quantity">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary" type="submit">Add Item</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
+        <div class="container" #div>
+                <div class="row" *ngFor="let product of model">
+                    <div class="col">{{product.barcode}}</div>
+                    <div class="col">{{product.name}}</div>
+                    <div class="col">{{product.category.name}}</div>
+                    <div class="col">{{product.quantity}}</div>
+                    <div class="col">{{product.price}}</div>
+                    <div class="col"><button class="btn btn-danger" (click)="removeItem(product.barcode)">remove</button></div>
+                </div>
+                <div class="row" >
+                    <div class="col"></div>
+                    <div class="col">
+                        <button [disabled]="this.noItems" class="btn btn-primary" (click)="createInvoice()">Create Invoice</button>
+                    </div>
+                    <div class="col">
+                        <label>price : </label>
+                    </div>
+                    <div class="col">
+                        <label [(ngModel)]="TotalPrice">{{this.TotalPrice}}</label>
+                    </div>    
+                </div>
+        </div>
+    </mat-card>
+</div>
